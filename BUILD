@@ -2,6 +2,7 @@ load("@aspect_bazel_lib//lib:jq.bzl", "jq")
 load("@aspect_bazel_lib//lib:run_binary.bzl", "run_binary")
 load("@rules_uv//uv:pip.bzl", "pip_compile")
 
+# keep
 filegroup(
     name = "requirements",
     srcs = ["requirements.txt"],
