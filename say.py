@@ -28,9 +28,9 @@ MARVIN="""
 """
 
 
-def say(text):
+def marvin(text):
     cowsay.draw(text, MARVIN)
 
-def say_stamped(text):
+def stamped(text):
     with open(path.join(FOLDER, "header.txt"), "r") as header:
         cowsay.draw(header.read() + text, MARVIN)
