@@ -1,6 +1,6 @@
-# Python library template for Aspect CLI
+# Python library template for Bazel
 
-First run `aspect init` and choose Python.
+This assumes you've started from https://github.com/bazel-starters/py
 
 Then run this (replacing `mylib` with the folder you'd like to create):
 
