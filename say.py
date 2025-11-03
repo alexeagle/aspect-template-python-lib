@@ -6,10 +6,31 @@ from os import path, getenv, sep
 WORKSPACE=getenv('BAZEL_WORKSPACE', '')
 FOLDER=path.dirname(__file__).split(WORKSPACE + sep)[-1]
 
+MARVIN="""
+      \  |
+       \ |
+        \|
+           ---------------
+        =--=+++***++++++==---       --
+       =-=+##***************=--   =----
+      ===+##**=+*******+++***+--+=---==
+     ===+##*+:::-*****+-::-***+-==--===
+     ===*###**=+*++++++=--+**#*=-+====
+   =====*#####***+---+*****###*======
+ --=++===**###################*===
+---==+++++++++==+++++******++=====
+ ====+++*+==+*+===================
+   ===++******==================+
+       +++++++++=============++=
+         +++++++++++++++++++++
+           ##%%#+++++#####
+            ##%      %%##
+"""
 
-def moo(text):
-    cowsay.cow(text)
 
-def moo_stamped(text):
+def say(text):
+    cowsay.draw(text, MARVIN)
+
+def say_stamped(text):
     with open(path.join(FOLDER, "header.txt"), "r") as header:
-        cowsay.cow(header.read() + text)
+        cowsay.draw(header.read() + text, MARVIN)
