@@ -6,7 +6,7 @@ from os import path, getenv, sep
 WORKSPACE=getenv('BAZEL_WORKSPACE', '')
 FOLDER=path.dirname(__file__).split(WORKSPACE + sep)[-1]
 
-MARVIN="""
+MARVIN=r"""
       \  |
        \ |
         \|
